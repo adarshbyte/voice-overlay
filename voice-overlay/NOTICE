@@ -1,0 +1,13 @@
+Voice Overlay
+Copyright 2026 Adarsh
+
+Original Voice Overlay code is licensed under the Apache License, Version 2.0.
+See LICENSE for the full terms.
+
+Voice Overlay can invoke the separately installed NVIDIA NeMo-Speech.cpp
+runtime and Nemotron speech models. Those components are not included in
+this source repository or the default packaged app. Their copyright and
+license terms are separate; see THIRD_PARTY_NOTICES.md.
+
+Voice Overlay is an independent project and is not affiliated with or
+endorsed by NVIDIA.
