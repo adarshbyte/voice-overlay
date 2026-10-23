@@ -4,7 +4,7 @@
 
 Hold a shortcut, speak, and insert the transcript into the app you are using without switching windows.
 
-▶ **[Watch the 46-second demo](assets/voice-overlay-demo.mp4)**
+https://github.com/user-attachments/assets/77b5f2ee-e4e7-4996-8ded-4a1427151c57
 
 Voice Overlay is a native Swift/AppKit app that runs [NVIDIA NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) on your computer. The default speech model is **Nemotron 3.5 ASR**. It does not require a cloud transcription API or API key.
 
