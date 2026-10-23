@@ -4,20 +4,20 @@
 
 Hold a shortcut, speak, and insert the transcript into the app you are using without switching windows.
 
+▶ **[Watch the 46-second demo](assets/voice-overlay-demo.mp4)**
+
 Voice Overlay is a native Swift/AppKit app that runs [NVIDIA NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) on your computer. The default speech model is **Nemotron 3.5 ASR**. It does not require a cloud transcription API or API key.
 
 **Status:** early developer release, built from source. The packaging script creates an ad-hoc-signed app for local testing, not a Developer ID-signed or notarized public installer. No affiliation with NVIDIA is implied.
 
-## A solid competitor to Wispr Flow
-
-Voice Overlay is being built as a solid local-first competitor to Wispr Flow for everyday Mac dictation. It covers the core workflow: speak, transcribe, and insert text into a compatible app. Its focus is local speech processing, native keyboard controls, and an open codebase you can inspect or extend.
+## Features
 
 - Run speech recognition on your own Mac after installing the runtime and model; no cloud transcription account or API key is required.
 - Dictate with a floating mic, menu-bar control, or global push-to-talk shortcuts.
 - Recognize Hindi and English with automatic language detection, or select English recognition explicitly.
 - Modify or build commercial products from the original app code under Apache-2.0, while respecting the separate runtime/model licenses.
 
-The current release provides core dictation, not every feature of a mature writing assistant. It does not yet offer automatic text rewriting, speech translation, cross-platform clients, or a signed public installer. We do not claim better accuracy, lower resource use, or greater speed than Wispr Flow without testing both apps on the same hardware and audio.
+Not yet included: automatic text rewriting, speech translation, cross-platform clients, or a signed public installer. Accuracy and speed versus other dictation apps have not been benchmarked.
 
 ## Requirements
 
@@ -125,7 +125,7 @@ codesign --verify --deep --strict dist/VoiceOverlay.app
 
 The GitHub Actions workflow runs the mock-based suite and packaging on macOS; live microphone, hotkey, auto-paste, and model quality checks remain manual. VS Code tasks are supplied for build, tests, and packaging.
 
-Coding agents should read [AGENTS.md](AGENTS.md) for setup commands, architecture, the Wispr Flow alternative product direction, and contribution safeguards.
+Coding agents should read [AGENTS.md](AGENTS.md) for setup commands, architecture, and contribution safeguards.
 
 ## License and commercial use
 
